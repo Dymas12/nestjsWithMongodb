@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { JogadoresModule } from './jogadores/jogadores.module';
+import { ProcessoModule } from './processo/processo.module';
 
 @Module({
   imports: [
@@ -11,6 +12,7 @@ import { JogadoresModule } from './jogadores/jogadores.module';
       },
     ),
     JogadoresModule,
+    ProcessoModule,
   ],
   controllers: [],
   providers: [],
